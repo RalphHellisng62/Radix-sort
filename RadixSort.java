@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class RadixSort {
@@ -42,7 +43,11 @@ public class RadixSort {
                     }
                 }
             }
+        } catch (IOException | NumberFormatException e) { // Despues agrego un catch en cason de no reconocer el archivo
+            System.out.println("Error al leer el archivo: " + e.getMessage());
+            System.exit(1);
         }
+        return numeros.stream().mapToInt(i -> i).toArray();
     }
 
 }
