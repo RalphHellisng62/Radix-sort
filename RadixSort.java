@@ -70,6 +70,12 @@ public class RadixSort {
             imprimirArray(arr); // Y aqui mostrara el proceso en tiempo real
         }
     }
+
+    // Aqui el coutingSort se aplicara para cada digito
+    public static void countingSortPorDigito(int[] arr, int exp) {
+        int[] salida = new int[arr.length];
+        int[] conteo = new int[10]; // sera para los dígitos del 0 al9
+    }
 }
 
 
