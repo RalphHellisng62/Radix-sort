@@ -74,7 +74,19 @@ public class RadixSort {
     // Aqui el coutingSort se aplicara para cada digito
     public static void countingSortPorDigito(int[] arr, int exp) {
         int[] salida = new int[arr.length];
-        int[] conteo = new int[10]; // sera para los dígitos del 0 al9
+        int[] conteo = new int[10]; // sera para los dígitos del 0 al 9
+
+         // En esta parte de contaran las apariciones por dígito
+        for (int num : arr) {
+            int indice = (num / exp) % 10;
+            conteo[indice]++;
+        }
+
+        // Y se transformara en un acumulado
+        for (int i = 1; i < 10; i++) {
+            conteo[i] += conteo[i - 1];
+        }
+
     }
 }
 
