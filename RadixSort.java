@@ -49,6 +49,15 @@ public class RadixSort {
         }
         return numeros.stream().mapToInt(i -> i).toArray();
     }
+    
+    // Ahora se hara las funciones para encontrar el numero máximo
+    public static int obtenerMaximo(int[] arr) {
+        int max = arr[0];
+        for (int num : arr) {
+            if (num > max) max = num;
+        }
+        return max;
+    }
 
 }
 
