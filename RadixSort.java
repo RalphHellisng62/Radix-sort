@@ -13,7 +13,7 @@ public class RadixSort {
         String archivoEntrada = "numeros.txt";
         String archivoSalida = "numeros_ordenados_radix.txt";
 
-        System.out.println("📥 Leyendo archivo: " + archivoEntrada);
+        System.out.println("Leyendo archivo: " + archivoEntrada);
         int[] numeros = leerArchivo(archivoEntrada);
 
         System.out.println("\n numeros originales:");
