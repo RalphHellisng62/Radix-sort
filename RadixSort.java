@@ -110,6 +110,14 @@ public class RadixSort {
             System.out.println("Error al guardar archivo: " + e.getMessage());
         }
     }
+
+    // Aqui uso el método auxiliar para imprimir los arreglos
+    public static void imprimirArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
 }
 
 
